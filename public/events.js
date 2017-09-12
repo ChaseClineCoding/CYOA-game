@@ -16,6 +16,8 @@ var scene_2a = ['> The troll rips you apart limb from limb\n> Bad move\n\nPress 
 
 var scene_1c = ['> The troll stirs, grumbles, and bellows "Why have you disturbed my sleep?!"\n\nPress a number:\n1. Attack troll\n2. Attempt to make friends', scene_2a, scene_2b, 'none']
 
+var scene_1a = ['> The gate is locked.\n\nPress a number:\n1. Look around the cell\n2. Attempt to wake up troll', scene_1b, scene_1c, 'none']
+
 var scene_1b = ['> The cell is small and empty except for your noisy cellmate.\n> There\'s nothing you can use here.\n\nPress a number:\n1. Check gate\n2. Attempt to wake up the troll', scene_1a, scene_1c, 'none']
 
 var scene_1a = ['> The gate is locked.\n\nPress a number:\n1. Look around the cell\n2. Attempt to wake up troll', scene_1b, scene_1c, 'none']
