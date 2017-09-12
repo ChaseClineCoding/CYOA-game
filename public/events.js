@@ -9,6 +9,9 @@ var scene_1a = []
 var scene_0 = []
 
 // Scenes
+var sceneLibrary = {scene_0: []}
+
+var currScene = ''
 
 var scene_2b = ['> You offer to work with the troll to find a way out\n> The troll is pleased and gives you a crushing hug that leaves you gasping for air', 'none', 'none', 'none']
 
@@ -16,15 +19,14 @@ var scene_2a = ['> The troll rips you apart limb from limb\n> Bad move\n\nPress 
 
 var scene_1c = ['> The troll stirs, grumbles, and bellows "Why have you disturbed my sleep?!"\n\nPress a number:\n1. Attack troll\n2. Attempt to make friends', scene_2a, scene_2b, 'none']
 
-var scene_1a = ['> The gate is locked.\n\nPress a number:\n1. Look around the cell\n2. Attempt to wake up troll', scene_1b, scene_1c, 'none']
+var scene_1aa = ['> The gate is locked.\n\nPress a number:\n1. Look around the cell\n2. Attempt to wake up troll', [], scene_1c, 'none']
 
-var scene_1b = ['> The cell is small and empty except for your noisy cellmate.\n> There\'s nothing you can use here.\n\nPress a number:\n1. Check gate\n2. Attempt to wake up the troll', scene_1a, scene_1c, 'none']
+var scene_1b = ['> The cell is small and empty except for your noisy cellmate.\n> There\'s nothing you can use here.\n\nPress a number:\n1. Check gate\n2. Attempt to wake up the troll', scene_1aa, scene_1c, 'none']
 
 var scene_1a = ['> The gate is locked.\n\nPress a number:\n1. Look around the cell\n2. Attempt to wake up troll', scene_1b, scene_1c, 'none']
 
 var scene_0 = ['> You find yourself in a cold dark cell.\n> Next to you, a rock troll fills the room with deafening snores.\n> What do you do?\n\nPress a number:\n1. Check gate\n2. Look around the cell\n3. Attempt to wake up the troll', scene_1a, scene_1b, scene_1c]
 
-var currScene = ''
 
 button.addEventListener('click', (event) => {
   event.preventDefault()
@@ -36,7 +38,7 @@ button.addEventListener('click', (event) => {
 function newOptions(op1, op2, op3) {
   window.addEventListener('keyup', function func(event) {
     if (event.code == 'Digit1') {
-      if (op1.length === 0){
+      if (op1.length === 0) {
         clearText()
         nextScene(currScene)
         var newP = document.createElement('p')
