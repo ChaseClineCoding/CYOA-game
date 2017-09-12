@@ -1,0 +1,28 @@
+body {
+  background: black;
+  height: 100vh;
+  color: lime;
+  font-family: fantasy;
+  margin: 0 150px 0 150px;
+}
+
+header {
+  text-align: center;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+main {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+button {
+  margin-top: 100px;
+  font-size: 20px;
+  color: red;
+}
+
+input {
+  color: black;
+}
