@@ -28,17 +28,17 @@ var scene_0 = []
 
 var currScene = ''
 
-scene_11 = ['> Congratulations!\n> You made it out alive!\n\nPress enter to play again', 'restart', 'none', 'none']
+scene_11 = ['> Congratulations!\n> You made it out alive!\n\nPress enter to play again', 'restart', 'none', 'none', 'gif', 'zDBUT0lkIdiYo']
 
-scene_10b = ['> You turn the corner to find the three acolytes and their beast together.\n> The three powerful mages blast you with magic.\n> You feel your blood begin to boil.\n> As your vessels rupture, you suddenly erupt in a shower of blood, tissue, and bone.\n\nPress enter to return to last checkpoint', 'none', 'none', 'none']
+scene_10b = ['> You turn the corner to find the three acolytes and their beast together.\n> The three powerful mages blast you with magic.\n> You feel your blood begin to boil.\n> As your vessels rupture, you suddenly erupt in a shower of blood, tissue, and bone.\n\nPress enter to return to last checkpoint', 'none', 'none', 'none', 'gif', '3oriO7Cxcsc2Qw7Aje']
 
 scene_10a = ['> You proceed forward through the labrynth of corridors.\n> You turn a corner and see sunlight at the end of the hall.\n\nPress enter to continue', scene_11, 'none', 'none', 'continue']
 
 scene_9b = ['> You injure the beast and it takes off down the corridor.\n\nEnter a number:\n1. Continue in opposite direction\n2. Chase beast down and finish it off', scene_10a, scene_10b, 'none', 'checkpoint']
 
-scene_9a = ['> The beast catches you and rips your head off.\n\nPress enter to return to last checkpoint', 'none', 'none', 'none']
+scene_9a = ['> The beast catches you and rips you in two.\n\nPress enter to return to last checkpoint', 'none', 'none', 'none', 'gif', '3o6ZsVVxlkWVP4PW2k']
 
-scene_8b = ['> You got caught and made into a sacrifice.\n\nPress enter to return to last checkpoint', 'none', 'none', 'none']
+scene_8b = ['> You got caught and made into a sacrifice.\n> You turn into the blood beast\n\nPress enter to return to last checkpoint', 'none', 'none', 'none', 'gif', 'zarMsdsEnGcWA']
 
 scene_8a = ['> You watch blood ritual.\n> Acolytes leave but the blood beast now paces the room\n\nEnter a number:\n1. Flee\n2. Fight', scene_9a, scene_9b, 'none', 'checkpoint']
 
@@ -62,7 +62,7 @@ scene_3a = ['> You: "Tell me more about your masters."\n> Grol: "Masters powerfu
 
 scene_2b = ['> You: "Are you in charge here?"\n> Grol: "Grol work for masters. Masters beat Grol for too much sleep, make Grol watch over stinky humans."\n\nPress a number:\n1. Ask for more info on Grol\'s masters\n2. Threaten to tell on Grol for sleeping (Intimidate)\n3. Offer your help with getting rid of Grol\'s masters (Persuade)', scene_3a, scene_3b, scene_3c, 'checkpoint']
 
-scene_2a = ['> Bad move.\n> The troll tears you apart limb from limb.\n\nPress enter to return to last checkpoint', 'none', 'none', 'none']
+scene_2a = ['> Bad move.\n> The troll tears you apart limb from limb.\n\nPress enter to return to last checkpoint', 'none', 'none', 'none', 'gif', 'l41JFruERBjM13fPO']
 
 scene_1c = ['> The troll grumbles, gets up, and flings the gate open.\n> Towering over you he bellows, "Why you wake Grol?!"\n\nPress a number:\n1. Attack!\n2. Talk to troll', scene_2a, scene_2b, 'none', 'checkpoint']
 
@@ -134,10 +134,27 @@ function nextScene(scene) {
       window.removeEventListener('keyup', enter)
     })
   }
+  if (scene[4] === 'gif') {
+    getGif(scene[5])
+  }
   var newP = document.createElement('p')
   newP.innerText = scene[0]
   main.append(newP)
   newOptions(scene[1], scene[2], scene[3])
+}
+
+function getGif(endpoint) {
+  fetch('http://api.giphy.com/v1/gifs/' + endpoint + '?api_key=d964f0a82ef84598bba1d5f95b1a590d')
+    .then((response) => {
+      return response.json()
+        .then((gif) => {
+          var newImg = document.createElement('img')
+          newImg.setAttribute('src', gif.data.images.original.url)
+          newImg.setAttribute('alt', ' ')
+          console.log(newImg)
+          main.append(newImg)
+        })
+    })
 }
 
 function clearText() {

@@ -3,7 +3,7 @@ body {
   height: 100vh;
   color: lime;
   font-family: fantasy;
-  margin: 0 150px 0 150px;
+  margin: 0 5% 0 5%;
 }
 
 header {
@@ -25,4 +25,15 @@ button {
 
 input {
   color: black;
+}
+
+img {
+  max-height: 40vh;
+}
+
+@media only screen and (max-width: 400px) {
+  img {
+    max-width: 350px;
+    margin: auto;
+  }
 }
