@@ -32,7 +32,7 @@ scene_11 = ['> Congratulations!\n> You made it out alive!\n\nPress enter to play
 
 scene_10b = ['> The beast leads you right to its masters.\n> The three powerful mages focus their dark powers on you.\n> You feel your blood begin to boil.\n> As your vessels rupture, you violently erupt in a shower of blood, tissue, and bone.\n\nPress enter to return to last checkpoint', 'none', 'none', 'none', 'gif', '3oriO7Cxcsc2Qw7Aje']
 
-scene_10a = ['> You proceed forward through the labrynth of corridors.\n> You turn a corner and see sunlight at the end of the hall.\n\nPress enter to continue', scene_11, 'none', 'none', 'continue']
+scene_10a = ['> You proceed forward through the labyrinth of corridors.\n> You turn a corner and see sunlight at the end of the hall.\n\nPress enter to continue', scene_11, 'none', 'none', 'continue']
 
 scene_9b = ['> You give the creature everything you\'ve got.\n> You manage to injure the beast and it takes off down the corridor.\n\nEnter a number:\n1. Continue in opposite direction\n2. Chase beast down and finish it off', scene_10a, scene_10b, 'none', 'checkpoint']
 
