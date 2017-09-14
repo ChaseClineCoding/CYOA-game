@@ -38,7 +38,7 @@ scene_9b = ['> You give the beast everything you\'ve got.\n> You manage to injur
 
 scene_9a = ['> You bolt down the next corridor and attempt to outrun the beast, but you are no match for its speed.\n> It catches you and rips you in half.\n\nPress enter to return to last checkpoint', 'none', 'none', 'none', 'gif', '3o6ZsVVxlkWVP4PW2k']
 
-scene_8b = ['> You manage to help their victim escape.\n> Unfortunately the acolytes now turn their attention towards you and continue their chanting.\n> You feel your skin stretching and tearing as something within you tries to make its way out.\n> You writhe in agony as you make your transformation from man to beast.\n> Your humanity is gone and you now belong to the Acolytes of Darkness.\n\nPress enter to return to last checkpoint', 'none', 'none', 'none', 'gif', 'zarMsdsEnGcWA']
+scene_8b = ['> You manage to help their victim escape.\n> Unfortunately, the acolytes now turn their attention towards you and continue their chanting.\n> You feel your skin stretching and tearing as something within you tries to make its way out.\n> You writhe in agony as you make your transformation from man to beast.\n\nPress enter to return to last checkpoint', 'none', 'none', 'none', 'gif', 'zarMsdsEnGcWA']
 
 scene_8a = ['> You watch in horror as the poor man\'s skin begins shifting and stretching.\n> Razor sharp claws rip through his body from the inside\n> Like a snake shedding its skin, a monstrous creature makes its way out and lets its ravaged man suit collapse to the ground.\n> The acolytes leave but the beast now paces the room.\n\nEnter a number:\n1. Flee\n2. Fight', scene_9a, scene_9b, 'none', 'checkpoint']
 
