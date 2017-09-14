@@ -30,39 +30,39 @@ var currScene = ''
 
 scene_11 = ['> Congratulations!\n> You made it out alive!\n\nPress enter to play again', 'restart', 'none', 'none', 'gif', 'zDBUT0lkIdiYo']
 
-scene_10b = ['> You turn the corner to find the three acolytes and their beast together.\n> The three powerful mages blast you with magic.\n> You feel your blood begin to boil.\n> As your vessels rupture, you suddenly erupt in a shower of blood, tissue, and bone.\n\nPress enter to return to last checkpoint', 'none', 'none', 'none', 'gif', '3oriO7Cxcsc2Qw7Aje']
+scene_10b = ['> The beast leads you right to its masters.\n> The three powerful mages blast you with magic.\n> You feel your blood begin to boil.\n> As your vessels rupture, you violently erupt in a shower of blood, tissue, and bone.\n\nPress enter to return to last checkpoint', 'none', 'none', 'none', 'gif', '3oriO7Cxcsc2Qw7Aje']
 
 scene_10a = ['> You proceed forward through the labrynth of corridors.\n> You turn a corner and see sunlight at the end of the hall.\n\nPress enter to continue', scene_11, 'none', 'none', 'continue']
 
-scene_9b = ['> You injure the beast and it takes off down the corridor.\n\nEnter a number:\n1. Continue in opposite direction\n2. Chase beast down and finish it off', scene_10a, scene_10b, 'none', 'checkpoint']
+scene_9b = ['> You give the beast everything you\'ve got.\n> You manage to injure the beast and it takes off down the corridor.\n\nEnter a number:\n1. Continue in opposite direction\n2. Chase beast down and finish it off', scene_10a, scene_10b, 'none', 'checkpoint']
 
-scene_9a = ['> The beast catches you and rips you in two.\n\nPress enter to return to last checkpoint', 'none', 'none', 'none', 'gif', '3o6ZsVVxlkWVP4PW2k']
+scene_9a = ['> You bolt down the next corridor and attempt to outrun the beast, but you are no match for its speed.\n> It catches you and rips you in half.\n\nPress enter to return to last checkpoint', 'none', 'none', 'none', 'gif', '3o6ZsVVxlkWVP4PW2k']
 
-scene_8b = ['> You got caught and made into a sacrifice.\n> You turn into the blood beast\n\nPress enter to return to last checkpoint', 'none', 'none', 'none', 'gif', 'zarMsdsEnGcWA']
+scene_8b = ['> You manage to help their victim escape.\n> Unfortunately the acolytes now turn their attention towards you and continue their chanting.\n> You feel your skin stretching and tearing as something within you tries to make its way out.\n> You writhe in agony as you make your transformation from man to beast.\n> Your humanity is gone and you now belong to the Acolytes of Darkness.\n\nPress enter to return to last checkpoint', 'none', 'none', 'none', 'gif', 'zarMsdsEnGcWA']
 
-scene_8a = ['> You watch blood ritual.\n> Acolytes leave but the blood beast now paces the room\n\nEnter a number:\n1. Flee\n2. Fight', scene_9a, scene_9b, 'none', 'checkpoint']
+scene_8a = ['> You watch in horror as the poor man\'s skin begins shifting and stretching.\n> Razor sharp claws rip through his body from the inside\n> Like a snake shedding its skin, a monstrous creature makes its way out and lets its ravaged man suit collapse to the ground.\n> The acolytes leave but the beast now paces the room.\n\nEnter a number:\n1. Flee\n2. Fight', scene_9a, scene_9b, 'none', 'checkpoint']
 
-scene_7 = ['> You enter the room\n> You see blood ritual being performed.\n> What do you do?\n\nEnter a number:\n1. Stay hidden\n2. Attempt to sneak past', scene_8a, scene_8b, 'none', 'checkpoint']
+scene_7 = ['> You sneak into the room at the end of the hall where you find the source of the chanting.\n> Three Acolytes of Darkness surround a beaten and bloodied man.\n> They appear to be performing some sort of ritual sacrifice\n> What do you do?\n\nEnter a number:\n1. Stay hidden\n2. Stop the ritual', scene_8a, scene_8b, 'none', 'checkpoint']
 
 scene_6 = ['> With weapon in hand, you continue down the corridor.\n> You hear chanting in an unfamiliar tongue off in the distance.\n> As you close in on the strange voices, the darkness around you deepens.\n> You hear a blood curdling scream.\n> The torches that line the corridor flicker.\n> The darkness appears to be growing, suppressing all sources of light.\n\nPress enter to continue', scene_7, 'none', 'none', 'continue']
 
-scene_5c = ['> You have chosen the path of the Rogue.\n> You use your stealth, and cunning to sneak by enemies undected or take them out silenty with your trusty daggers.\n\nPress enter to continue', scene_6, 'none', 'none', 'continue']
+scene_5c = ['> You have chosen the path of the Rogue.\n> You use your stealth and cunning to sneak by enemies undected or take them out silenty with your trusty daggers.\n\nPress enter to continue', scene_6, 'none', 'none', 'continue']
 
-scene_5b = ['> You have chosen the path of the Mage.\n> You use your arcane knowledge and ability to cast spells in order to manipulate the elements and disintegrate your enemies.\n\nPress enter to continue', scene_6, 'none', 'none', 'continue']
+scene_5b = ['> You have chosen the path of the Mage.\n> You use your arcane knowledge and spell-casting abilities in order to manipulate the elements and disintegrate your enemies.\n\nPress enter to continue', scene_6, 'none', 'none', 'continue']
 
 scene_5a = ['> You have chosen the path of the Barbarian.\n> You use your overwhelming strength and ability to wield heavy weapons to hack your enemies to pieces.\n\nPress enter to continue', scene_6, 'none', 'none', 'continue']
 
 scene_4 = ['> You head down a corridor and enter a torch-lit room.\n> You see a table with an axe, a magic staff, and a pair of daggers.\n> Which weapon do you choose?\n\nPress a number:\n1. Axe - Barbarian\n2. Staff - Mage\n3. Daggers - Rogue', scene_5a, scene_5b, scene_5c]
 
-scene_3c = ['> Grol shakes the ground as he jumps up and down with excitement\n> Grol: "Yes! Grol be free of masters! All Grol want is munch time on rocks and quiet for sleep time. Grol no ask for much."\n> The rock troll steps out of the way and lets you out of the cell.\n\nPress enter to continue', scene_4, 'none', 'none', 'continue']
+scene_3c = ['> Grol shakes the ground as he jumps up and down with excitement\n> Grol: "Yes! Grol be free of masters! All Grol want is rocks to munch on and quiet for sleep time. Grol no ask for much."\n> The rock troll steps out of the way and lets you out of the cell.\n\nPress enter to continue', scene_4, 'none', 'none', 'continue']
 
 scene_3b = ['(Failed)\n> Grol: "Grol is not caring. Masters already know Grol sleeps all day. Go tell masters. Grol gets beat either way."\n\nPress enter to return to last checkpoint', 'none', 'none', 'none']
 
-scene_3a = ['> You: "Tell me more about your masters."\n> Grol: "Masters powerful with magic. Take blood from stinky humans they do. Scary angry beasts they make using magic from man-blood. Grol no like scary masters pets. Bitey critters snarl and snap at poor Grol."\n\nPress a number:\n1. Threaten to tell on Grol for sleeping (Intimidate)\n2. Offer your help with getting rid of Grol\'s masters (Persuade)', scene_3b, scene_3c, 'none']
+scene_3a = ['> You: "Tell me more about your masters."\n> Grol: "Masters powerful with magic. Take stinky humans and turn them into scary angry beasts they do. Grol no like angry masters pets. Bitey critters snarl and snap at poor Grol."\n\nPress a number:\n1. Threaten to tell on Grol for sleeping (Intimidate)\n2. Offer your help with getting rid of Grol\'s masters (Persuade)', scene_3b, scene_3c, 'none']
 
 scene_2b = ['> You: "Are you in charge here?"\n> Grol: "Grol work for masters. Masters beat Grol for too much sleep, make Grol watch over stinky humans."\n\nPress a number:\n1. Ask for more info on Grol\'s masters\n2. Threaten to tell on Grol for sleeping (Intimidate)\n3. Offer your help with getting rid of Grol\'s masters (Persuade)', scene_3a, scene_3b, scene_3c, 'checkpoint']
 
-scene_2a = ['> Bad move.\n> The troll tears you apart limb from limb.\n\nPress enter to return to last checkpoint', 'none', 'none', 'none', 'gif', 'l41JFruERBjM13fPO']
+scene_2a = ['> Bad move.\n> The troll grabs you by the skull and tears you apart like string cheese.\n\nPress enter to return to last checkpoint', 'none', 'none', 'none', 'gif', 'l41JFruERBjM13fPO']
 
 scene_1c = ['> The troll grumbles, gets up, and flings the gate open.\n> Towering over you he bellows, "Why you wake Grol?!"\n\nPress a number:\n1. Attack!\n2. Talk to troll', scene_2a, scene_2b, 'none', 'checkpoint']
 
