@@ -144,7 +144,7 @@ function nextScene(scene) {
 }
 
 function getGif(endpoint) {
-  fetch('http://api.giphy.com/v1/gifs/' + endpoint + '?api_key=d964f0a82ef84598bba1d5f95b1a590d')
+  fetch('https://api.giphy.com/v1/gifs/' + endpoint + '?api_key=d964f0a82ef84598bba1d5f95b1a590d')
     .then((response) => {
       return response.json()
         .then((gif) => {
