@@ -5,7 +5,7 @@ My motivation behind making this game is I really enjoy story-telling and playin
 
 You can find the deployed app at this url: https://cyoa-game.firebaseapp.com/
 
-Screenshots
+Screenshots:
 http://i1149.photobucket.com/albums/o596/Diomedes5000/Screen%20Shot%202017-09-15%20at%202.24.17%20PM_zpslusvx8bj.png
 http://i1149.photobucket.com/albums/o596/Diomedes5000/Screen%20Shot%202017-09-15%20at%202.26.02%20PM_zpspayfprkd.png
 http://i1149.photobucket.com/albums/o596/Diomedes5000/Screen%20Shot%202017-09-15%20at%202.24.22%20PM_zpsq7yshuia.png
@@ -13,7 +13,7 @@ http://i1149.photobucket.com/albums/o596/Diomedes5000/Screen%20Shot%202017-09-15
 http://i1149.photobucket.com/albums/o596/Diomedes5000/Screen%20Shot%202017-09-15%20at%202.26.25%20PM_zpsafufq1jd.png
 http://i1149.photobucket.com/albums/o596/Diomedes5000/Screen%20Shot%202017-09-15%20at%202.24.37%20PM_zpsgvwq1lcr.png
 
-Link to walkthrough video
+Link to walkthrough video:
 https://youtu.be/lyvJ6C-XKpg
 
 I used the Giphy API in this project to act out the different death scenes and for the final congratulations scene.
