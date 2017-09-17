@@ -1,6 +1,9 @@
+// Setup DOM elements
 var button = document.getElementById('begin')
 var header = document.getElementsByTagName('header')[0]
 var main = document.getElementsByTagName('main')[0]
+
+// Set scenes to empty arrays
 var scene_11 = []
 var scene_10b = []
 var scene_10a = []
@@ -72,18 +75,21 @@ scene_1a = ['> The gate is locked.\n\nPress a number:\n1. Look around the cell\n
 
 scene_0 = ['> You find yourself in a cold dark cell.\n> A rock troll sleeps just outside the gate shaking the room with deafening snores.\n> What do you do?\n\nPress a number:\n1. Check gate\n2. Look around the cell\n3. Attempt to wake up the troll', scene_1a, scene_1b, scene_1c]
 
+// Set first saveScene to gate scene in case it gets skipped that way the player can come back to it
 var saveScene = scene_1a
 
+// Set event handler for begin quest button
 button.addEventListener('click', (event) => {
   event.preventDefault()
   header.removeChild(button)
   beginQuest()
 })
 
-
+// Generate new options for each new scene that pops up using the scenes that are tied to it within their arrays
 function newOptions(op1, op2, op3) {
   window.addEventListener('keyup', function func(event) {
     if (event.code == 'Digit1') {
+      // If the scene is a previous scene go back to the last checkpoint
       if (op1.length === 0) {
         clearText()
         nextScene(saveScene)
@@ -102,11 +108,14 @@ function newOptions(op1, op2, op3) {
   })
 }
 
+// Start the next scene
 function nextScene(scene) {
   currScene = scene
+  // Save the checkpoint scene after you access it
   if (scene[4] === 'checkpoint') {
     saveScene = scene
   }
+  // Revert back to checkpoint
   if (scene[1] === 'none') {
     window.addEventListener('keyup', function enter(event) {
       if (event.code === 'Enter') {
@@ -116,6 +125,7 @@ function nextScene(scene) {
       window.removeEventListener('keyup', enter)
     })
   }
+  // Press enter to continue scenes
   if (scene[4] === 'continue') {
     window.addEventListener('keyup', function enter(event) {
       if (event.code === 'Enter') {
@@ -125,6 +135,7 @@ function nextScene(scene) {
       window.removeEventListener('keyup', enter)
     })
   }
+  // End scene goes back to beginning of quest
   if (scene[1] === 'restart') {
     window.addEventListener('keyup', function enter(event) {
       if (event.code === 'Enter') {
@@ -134,15 +145,18 @@ function nextScene(scene) {
       window.removeEventListener('keyup', enter)
     })
   }
+  // Scenes that are marked as gif have gifs that are tied to them
   if (scene[4] === 'gif') {
     getGif(scene[5])
   }
+  // Display the scene and create events for the options tied to that scene
   var newP = document.createElement('p')
   newP.innerText = scene[0]
   main.append(newP)
   newOptions(scene[1], scene[2], scene[3])
 }
 
+// API call for the gif tied to the scene
 function getGif(endpoint) {
   fetch('https://api.giphy.com/v1/gifs/' + endpoint + '?api_key=d964f0a82ef84598bba1d5f95b1a590d')
     .then((response) => {
@@ -156,11 +170,12 @@ function getGif(endpoint) {
         })
     })
 }
-
+ // Clear the last scene before displaying the next one
 function clearText() {
   main.innerText = ''
 }
 
+// Main game function
 function beginQuest() {
   nextScene(scene_0)
 }
